@@ -2,7 +2,7 @@
 
 ## Description
 
-This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch. 
+This app is intended for use with the Sparta Global Devops Stream as a sample app. You can clone the repo and use it as is but no changes will be accepted on this branch.
 
 To use the repo within your course you should fork it.
 
@@ -58,6 +58,32 @@ npm test
 
 The test for posts will fail ( as expected ) if the database has not been correctly setup.
 
+## vagrant
 
+To create the environment you need to follow these steps:
 
+1. Install Oracle VM VirtualBox (https://www.virtualbox.org/wiki/Download_Old_Builds_5_2)
 
+2. Install Vagrant (https://releases.hashicorp.com/vagrant/) Version 2.2.5 / vagrant_2.2.5_x86_64.msi
+
+3. Install Git Bash (https://git-scm.com/downloads)
+
+4. Navigate to the git repository you have cloned in Git Bash
+
+5. type "vagrant up"
+
+6. If you get this error:
+
+    Stderr: VBoxManage.exe: error: VT-x is not available (VERR_VMX_NO_VMX)
+
+   You have to stop Hyper-V process in Windows
+
+   Run command prompt as administrator and type
+
+    bcdedit /set hypervisorlaunchtype off
+
+  7. type "vagrant ssh"
+
+  8. You are now in the Ubuntu environment
+
+  9. 
